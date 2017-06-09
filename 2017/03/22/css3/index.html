@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Css3 | 枫树下的老屋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="CSS3.0RGBA（r，g，b，a）颜色设置 a为透明度参数。  1例如：background-color: rgba(166, 106, 204, 0.5); background  新属性background-size:背景图片的大小。 设置值：    background-size 参数名 功  能      cover 图片缩放，铺满背景    contain 缩放图片至充满一个轴">
+<meta name="keywords" content="css3,前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Css3">
+<meta property="og:url" content="https://wuxiashuangji.github.io/2017/03/22/css3/index.html">
+<meta property="og:site_name" content="枫树下的老屋">
+<meta property="og:description" content="CSS3.0RGBA（r，g，b，a）颜色设置 a为透明度参数。  1例如：background-color: rgba(166, 106, 204, 0.5); background  新属性background-size:背景图片的大小。 设置值：    background-size 参数名 功  能      cover 图片缩放，铺满背景    contain 缩放图片至充满一个轴">
+<meta property="og:image" content="http://caniuse.com/">
+<meta property="og:image" content="http://www.youziku.com/">
+<meta property="og:image" content="http://www.iconfont.cn/">
+<meta property="og:image" content="http://app.fontastic.me/#select/3KnGTvVicfubMTBzarMK86">
+<meta property="og:image" content="http://static.zybuluo.com/antumuFish/ic02rj9syjzhy7o7u9rpgyi7/image_1an3r1rtdqs17epmj5an416r79.png">
+<meta property="og:image" content="http://static.zybuluo.com/antumuFish/6ldz0mixrnach49ac10n5c5d/image_1an3r8bpk1rg31rgo7m51bqvnvnm.png">
+<meta property="og:image" content="http://static.zybuluo.com/antumuFish/h9l052befd13gj9a7kcrh668/image_1an3rclse8dah178f2kln16jq13.png">
+<meta property="og:image" content="http://www.youziku.com/">
+<meta property="og:updated_time" content="2017-06-09T13:40:59.171Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Css3">
+<meta name="twitter:description" content="CSS3.0RGBA（r，g，b，a）颜色设置 a为透明度参数。  1例如：background-color: rgba(166, 106, 204, 0.5); background  新属性background-size:背景图片的大小。 设置值：    background-size 参数名 功  能      cover 图片缩放，铺满背景    contain 缩放图片至充满一个轴">
+<meta name="twitter:image" content="http://caniuse.com/">
+  
+    <link rel="alternative" href="/atom.xml" title="枫树下的老屋" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: false,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img src="/img/head.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Zorl</a></h1>
+        </hgroup>
+
+        
+        
+            <form>
+                <input type="text" class="st-default-search-input search" id="search" placeholder=" Search...">
+            </form>
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/./Home">博客首页</a></li>
+                        
+                            <li><a href="/./works">作品展示</a></li>
+                        
+                            <li><a href="/./about">留言打卡</a></li>
+                        
+                            <li><a href="/./FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="#" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/H5/" style="font-size: 10px;">H5</a> <a href="/tags/Html/" style="font-size: 20px;">Html</a> <a href="/tags/css3/" style="font-size: 10px;">css3</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/前端开发/" style="font-size: 20px;">前端开发</a> <a href="/tags/，H5/" style="font-size: 10px;">，H5</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.baidu.com">baidu</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://wuxiashuangji.github.io/">GitHub</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.qq.com">腾讯</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">爱Music、爱交友、爱旅行、喜欢接触新鲜事物、迎接新的挑战，更爱异域之人文风景。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Zorl</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img src="/img/head.jpg" class="js-avatar" style="width: 100%; height: 100%; opacity: 1;">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Zorl</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/./Home">博客首页</a></li>
+                
+                    <li><a href="/./works">作品展示</a></li>
+                
+                    <li><a href="/./about">留言打卡</a></li>
+                
+                    <li><a href="/./FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="#" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
+                    
+                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-css3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/22/css3/" class="article-date">
+      <time datetime="2017-03-22T08:16:47.000Z" itemprop="datePublished">2017-03-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Css3
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="CSS3-0"><a href="#CSS3-0" class="headerlink" title="CSS3.0"></a>CSS3.0</h3><h4 id="RGBA（r，g，b，a）颜色设置"><a href="#RGBA（r，g，b，a）颜色设置" class="headerlink" title="RGBA（r，g，b，a）颜色设置"></a>RGBA（r，g，b，a）颜色设置</h4><blockquote>
+<p>a为透明度参数。</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">例如：background-color: rgba(166, 106, 204, 0.5);</div></pre></td></tr></table></figure>
+<h4 id="background-新属性"><a href="#background-新属性" class="headerlink" title="background  新属性"></a>background  新属性</h4><p>background-size:背景图片的大小。</p>
+<p>设置值：</p>
+<table>
+<thead>
+<tr>
+<th>background-size 参数名</th>
+<th>功  能</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cover</td>
+<td>图片缩放，铺满背景</td>
+<td></td>
+</tr>
+<tr>
+<td>contain</td>
+<td>缩放图片至充满一个轴</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">例如：</div><div class="line">div&#123;</div><div class="line">    width: 500px;</div><div class="line">    height: 1000px;</div><div class="line">    border: 1px solid #000;</div><div class="line">    background:url("1.jpeg") no-repeat top/500px 500px,url('2.jpg') no-repeat bottom/500px 500px,pink;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>例如：background-size：200px，400px/background-size:cover/background-size:100%；</p>
+<p>支持合写</p>
+<figure class="highlight plain"><figcaption><span>no-repeat ,url(&amp;amp;amp;#39;img/bg2.png&amp;amp;amp;#39;) no-repeat top right,url(&amp;amp;amp;quot;img/bg3.png&amp;amp;amp;quot;) no-repeat bottom right ,url(&amp;amp;amp;quot;img/bg4.png&amp;amp;amp;quot;) no-repeat bottom left,url(&amp;amp;amp;quot;img/dog.gif&amp;amp;amp;quot;) no-repeat center center/400px 260px, grey;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">background:url(&quot;img/bg1.png&quot;) no-repeat ,</div><div class="line">            url(&apos;img/bg2.png&apos;) no-repeat top right,</div><div class="line">            url(&quot;img/bg3.png&quot;) no-repeat bottom right ,</div><div class="line">            url(&quot;img/bg4.png&quot;) no-repeat bottom left,url(&quot;img/dog.gif&quot;) no-repeat center center/400px 260px, grey;合写模式</div></pre></td></tr></table></figure>
+<h3 id="border-image-边框背景图"><a href="#border-image-边框背景图" class="headerlink" title="border-image  边框背景图"></a>border-image  边框背景图</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">background-color: grey;</div><div class="line">background: url('2.jpg') no-repeat left/cover;</div><div class="line">/*background: url('2.jpg') no-repeat left/contain;*/</div><div class="line"></div><div class="line">border: 50px solid #000;</div><div class="line">border-image: url('img/border-oil.jpg') 75 75;//要对边框的角进行切割，传入切割参数（75,75）。</div></pre></td></tr></table></figure>
+<h4 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h4><p><strong>border-image</strong>：&lt;’ <a href="border-image-source.htm">border-image-source</a> ‘&gt; || &lt;’ <a href="border-image-slice.htm">border-image-slice</a> ‘&gt; [ / &lt;’ <a href="border-image-width.htm">border-image-width</a> ‘&gt; | / &lt;’ <a href="border-image-width.htm">border-image-width</a> ‘&gt;? / &lt;’ <a href="border-image-outset.htm">border-image-outset</a> ‘&gt; ]? || &lt;’ <a href="border-image-repeat.htm">border-image-repeat</a> ‘&gt;</p>
+<p><strong>默认值</strong>：看每个独立属性</p>
+<p><strong>适用于</strong>：看每个独立属性</p>
+<p><strong>继承性</strong>：无</p>
+<p><strong>动画性</strong>：看每个独立属性</p>
+<p><strong>计算值</strong>：看每个独立属性</p>
+<h4 id="取值："><a href="#取值：" class="headerlink" title="取值："></a>取值：</h4><ul>
+<li><p>&lt;’ <a href="border-image-source.htm">border-image-source</a> ‘&gt;：</p>
+<p>设置或检索对象的边框是否用图像定义样式或图像来源路径。</p>
+</li>
+<li><p>&lt;’ <a href="border-image-slice.htm">border-image-slice</a> ‘&gt;：</p>
+<p>设置或检索对象的边框背景图的分割方式。</p>
+</li>
+<li><p>&lt;’ <a href="border-image-width.htm">border-image-width</a> ‘&gt;：</p>
+<p>设置或检索对象的边框厚度。</p>
+</li>
+<li><p>&lt;’ <a href="border-image-outset.htm">border-image-outset</a> ‘&gt;：</p>
+<p>设置或检索对象的边框背景图的扩展。</p>
+</li>
+<li><p>&lt;’ <a href="border-image-repeat.htm">border-image-repeat</a> ‘&gt;：</p>
+<p>设置或检索对象的边框图像的平铺方式。</p>
+</li>
+</ul>
+<h4 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h4><p><strong>复合属性。设置或检索对象的边框样式使用图像来填充。</strong> 使用图像替代 &lt;’ <a href="border-style.htm">border-style</a> ‘&gt; 去定义边框样式。当 &lt;’ border-image ‘&gt; 为<code>none</code>或图像不可见时，将会显示 &lt;’ <a href="border-style.htm">border-style</a> ‘&gt; 所定义的边框样式效果。</p>
+<h3 id="transform-2D元素空间选择变化"><a href="#transform-2D元素空间选择变化" class="headerlink" title="transform 2D元素空间选择变化"></a>transform 2D元素空间选择变化</h3><h4 id="transition属性"><a href="#transition属性" class="headerlink" title="transition属性"></a>transition属性</h4><blockquote>
+<p>例如：transition: all 3s;</p>
+</blockquote>
+<h5 id="语法：-1"><a href="#语法：-1" class="headerlink" title="语法："></a>语法：</h5><p><strong>transition</strong>：<a href="#single-transition"></a>[,<a href="#single-transition"></a>]*</p>
+<p><em>**</em> = [ none | <a href="transition-property.htm#single-transition-property"></a> ] || <a href="../../values/time/time.htm"></a> || <a href="transition-timing-function.htm#single-transition-timing-function"></a> || <a href="../../values/time/time.htm"></a></p>
+<p><strong>默认值</strong>：看每个独立属性</p>
+<p><strong>适用于</strong>：所有元素，包含伪对象:after和:before</p>
+<p><strong>继承性</strong>：无</p>
+<p><strong>动画性</strong>：否</p>
+<p><strong>计算值</strong>：看每个独立属性</p>
+<p><strong>媒体</strong>：交互</p>
+<h5 id="取值：-1"><a href="#取值：-1" class="headerlink" title="取值："></a>取值：</h5><ul>
+<li><p>&lt;’ <a href="transition-property.htm">transition-property</a> ‘&gt;：</p>
+<p>检索或设置对象中的参与过渡的属性</p>
+</li>
+<li><p>&lt;’ <a href="transition-duration.htm">transition-duration</a> ‘&gt;：</p>
+<p>检索或设置对象过渡的持续时间</p>
+</li>
+<li><p>&lt;’ <a href="transition-timing-function.htm">transition-timing-function</a> ‘&gt;：</p>
+<p>检索或设置对象中过渡的动画类型</p>
+</li>
+<li><p>&lt;’ <a href="transition-delay.htm">transition-delay</a> ‘&gt;：</p>
+<p>检索或设置对象延迟过渡的时间</p>
+</li>
+</ul>
+<h5 id="说明：-1"><a href="#说明：-1" class="headerlink" title="说明："></a>说明：</h5><p><strong>复合属性。检索或设置对象变换时的过渡。</strong> 注意：如果只提供一个<a href="../../values/time/time.htm"></a>参数，则为 &lt;’ <a href="transition-duration.htm">transition-duration</a> ‘&gt; 的值定义；如果提供二个<a href="../../values/time/time.htm"></a>参数，则第一个为 &lt;’ <a href="transition-duration.htm">transition-duration</a> ‘&gt; 的值定义，第二个为 &lt;’ <a href="transition-delay.htm">transition-delay</a> ‘&gt; 的值定义</p>
+<h4 id="transform-属性"><a href="#transform-属性" class="headerlink" title="transform 属性"></a>transform 属性</h4><blockquote>
+<p>例如：transform：translate（x轴位移,y轴位移） rotate（旋转度数） skew（扭曲度数） scale（缩放比例）；<br>transform：translate（100px,200px） rotate（30deg）rotate（30deg）skew（45deg）scale（1.5）；<br>translate属性可以细分为:translatex()/translatey()/translatez()<br>rotate属性可以细分为：rotatex（）/rotatey()/rotatez()<br>skew属性可以细分为：skewx()/skewy()</p>
+<p>####详细如下：<br>none： 无转换 2D Transform Functions：<br>matrix()： 以一个含六值的(a,b,c,d,e,f)变换矩阵的形式指定一个2D变换，相当于直接应用一个[a,b,c,d,e,f]变换矩阵<br>translate()： 指定对象的2D translation（2D平移）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0<br>translatex()： 指定对象X轴（水平方向）的平移<br>translatey()： 指定对象Y轴（垂直方向）的平移<br>rotate()： 指定对象的2D rotation（2D旋转），需先有 &lt;’ transform-origin ‘&gt; 属性的定义<br>scale()： 指定对象的2D scale（2D缩放）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认取第一个参数的值<br>scalex()： 指定对象X轴的（水平方向）缩放<br>scaley()： 指定对象Y轴的（垂直方向）缩放<br>skew()： 指定对象skew transformation（斜切扭曲）。第一个参数对应X轴，第二个参数对应Y轴。如果第二个参数未提供，则默认值为0<br>skewx()： 指定对象X轴的（水平方向）扭曲<br>skewy()： 指定对象Y轴的（垂直方向）扭曲 3D Transform Functions：<br>matrix3d()： 以一个4x4矩阵的形式指定一个3D变换<br>translate3d()： 指定对象的3D位移。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略<br>translatez()： 指定对象Z轴的平移<br>rotate3d()： 指定对象的3D旋转角度，其中前3个参数分别表示旋转的方向x,y,z，第4个参数表示旋转的角度，参数不允许省略<br>rotatex()： 指定对象在x轴上的旋转角度<br>rotatey()： 指定对象在y轴上的旋转角度<br>rotatez()： 指定对象在z轴上的旋转角度<br>scale3d()： 指定对象的3D缩放。第1个参数对应X轴，第2个参数对应Y轴，第3个参数对应Z轴，参数不允许省略<br>scalez()： 指定对象的z轴缩放<br>perspective()： 指定透视距离</p>
+</blockquote>
+<h1 id="transform-3d"><a href="#transform-3d" class="headerlink" title="transform_3d"></a>transform_3d</h1><p>标签（空格分隔）： CSS3</p>
+<hr>
+<blockquote>
+<p>对应的属性值依旧是<code>transform</code>,只是多了一个<code>Z轴</code>而已,需要一定的空间想象能力</p>
+</blockquote>
+<h2 id="坐标轴"><a href="#坐标轴" class="headerlink" title="坐标轴"></a>坐标轴</h2><ul>
+<li>其中Z轴垂直于屏幕往里<br> <img src="http://caniuse.com/" alt="图片1.png-133.8kB"></li>
+</ul>
+<ul>
+<li>也可以通过左手坐标系来查找这几个轴<br><img src="http://www.youziku.com/" alt="图片2.png-111.1kB"></li>
+</ul>
+<h2 id="3d旋转"><a href="#3d旋转" class="headerlink" title="3d旋转"></a>3d旋转</h2><blockquote>
+<p>当明确了三个坐标轴以后,我们就能够对元素进行<code>3d</code>方向上的旋转了</p>
+</blockquote>
+<ul>
+<li><p>左手定则</p>
+<ul>
+<li>大拇指指向旋转轴的正方向,其余四指<code>弯曲的方向</code>就是旋转的方向</li>
+</ul>
+</li>
+<li><p>语法</p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* x方向旋转180°*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:rotateX(180deg)</span></div><div class="line"><span class="comment">/* y方向旋转180°*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:rotateY(180deg)</span></div><div class="line"><span class="comment">/* z方向旋转180°*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:rotateZ(180deg)</span></div></pre></td></tr></table></figure>
+<h2 id="视角"><a href="#视角" class="headerlink" title="视角"></a>视角</h2><blockquote>
+<p><code>perspective(透视,视角)</code>这个属性需要一定的<code>空间想象能力</code>,其实就是离我们近的一端看起来<code>大一点</code></p>
+</blockquote>
+<p><img src="http://www.iconfont.cn/" alt="image_1an3qfb301unh1tuf17271jr6fi611.png-7kB"><br>​</p>
+<ul>
+<li>语法:</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*直接添加给transform:标签 距离 显示屏 1000px*/</span></div><div class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:perspective(1000px)</span></div><div class="line"></div><div class="line"><span class="comment">/*直接使用perspective 属性赋值:标签 距离 显示屏 1000px*/</span></div><div class="line"><span class="selector-tag">perspective</span><span class="selector-pseudo">:1000px</span></div></pre></td></tr></table></figure>
+<ul>
+<li>解释:<ul>
+<li>这个属性的理解 需要配合<code>transformZ()</code></li>
+<li>设置了<code>perspective</code>属性假定为<code>1000px</code></li>
+<li>当我们使用<code>transformZ()</code>移动1000px时,会发现标签消失了,也就意味着,移出了 显示屏 <code>空间想象</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>默认Y轴旋转45°<br><img src="http://app.fontastic.me/#select/3KnGTvVicfubMTBzarMK86" alt="image_1an3r1ad9fqh1s3511m21ge3rqs1r.png-7.5kB"></p>
+</li>
+<li><p>透视 Y轴旋转45°<br><img src="http://static.zybuluo.com/antumuFish/ic02rj9syjzhy7o7u9rpgyi7/image_1an3r1rtdqs17epmj5an416r79.png" alt="image_1an3r1rtdqs17epmj5an416r79.png-8.7kB"></p>
+</li>
+</ul>
+<ul>
+<li>使用注意:<ul>
+<li>虽然可以直接添加给元素本身,但是建议添加到不进行变换的<code>父容器</code>中</li>
+</ul>
+</li>
+</ul>
+<h2 id="视角方向-perspective-origin"><a href="#视角方向-perspective-origin" class="headerlink" title="视角方向(perspective-origin)"></a>视角方向(perspective-origin)</h2><blockquote>
+<p>默认我们是直直的看着屏幕,通过该属性可以修改查看屏幕的角度,需要一定的<code>空间想象能力</code>,可以<strong>先不使用</strong></p>
+</blockquote>
+<ul>
+<li><p>默认视角<br><img src="http://static.zybuluo.com/antumuFish/6ldz0mixrnach49ac10n5c5d/image_1an3r8bpk1rg31rgo7m51bqvnvnm.png" alt="image_1an3r8bpk1rg31rgo7m51bqvnvnm.png-15kB"></p>
+</li>
+<li><p>修改之后</p>
+</li>
+</ul>
+<p><img src="http://static.zybuluo.com/antumuFish/h9l052befd13gj9a7kcrh668/image_1an3rclse8dah178f2kln16jq13.png" alt="image_1an3rclse8dah178f2kln16jq13.png-21.4kB"></p>
+<h2 id="变换样式-transform-style"><a href="#变换样式-transform-style" class="headerlink" title="变换样式(transform-style)"></a>变换样式(transform-style)</h2><blockquote>
+<p>在使用<code>3d</code>进行页面元素设置时,需要配合<code>transform-style</code>才能够实现完美的3d效果</p>
+</blockquote>
+<ul>
+<li><p>默认值(旋转中)</p>
+<pre><code>![image_1an3rj09o1rcq1it1v5a1pm687s1g.png-316.9kB][9]
+</code></pre></li>
+<li><p>修改为3d</p>
+<pre><code>![image_1an3rk2il1n2o6is195a14bgcql1t.png-467.9kB][10]
+</code></pre></li>
+<li><p><strong>使用注意:</strong></p>
+<ul>
+<li>该属性 需要添加到 <code>3d变换</code>的父容器上</li>
+</ul>
+</li>
+</ul>
+<p>[10]: <a href="http://static.zybuluo.com/antumuFish/xpeqj23wrl5ne6h8mulp8ch5/image_1an3rk2il1n2o6is195a14bgcql1t.png#" target="_blank" rel="external">http://static.zybuluo.com/antumuFish/xpeqj23wrl5ne6h8mulp8ch5/image_1an3rk2il1n2o6is195a14bgcql1t.png#</a> 动画</p>
+<p>标签（空格分隔）： CSS3</p>
+<hr>
+<blockquote>
+<p>使用过度,可以实现绝大多数的效果,但是需要对效果进行定制时,可以通过<code>动画animation</code>来实现</p>
+</blockquote>
+<h2 id="过渡的优缺点"><a href="#过渡的优缺点" class="headerlink" title="过渡的优缺点"></a>过渡的优缺点</h2><ul>
+<li>transition的优点在于简单易用，但是它有几个很大的局限。</li>
+</ul>
+<ol>
+<li>transition需要事件触发，所以没法在网页加载时自动发生。</li>
+<li>transition是一次性的，不能重复发生，除非一再触发。</li>
+<li>transition只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。</li>
+<li>一条transition规则，只能定义一个属性的变化，不能涉及多个属性。<br><code>CSS Animation</code>就是为了解决这些问题而提出的。</li>
+</ol>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><blockquote>
+<p>使用动画时,我们首先需要定义一组动画,在动画过程中我们可以对动画的步骤进行控制</p>
+</blockquote>
+<ul>
+<li><p>定义动画:<br>  使用<code>@keyFrames 关键字定义</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*动画名为:sevenColor</span></div><div class="line">    开始背景为红色</div><div class="line">    中途背景为橘色</div><div class="line">    结束为黄色</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> changeColor&#123;</div><div class="line">			0%&#123;<span class="attribute">background-color</span>:red;&#125;</div><div class="line">			50%&#123;<span class="attribute">background-color</span>:orange;&#125;</div><div class="line">			100%&#123;<span class="attribute">background-color</span>:yellow;&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/*动画名为:changeColor</span></div><div class="line">   效果跟上面的一样,只是使用关键字</div><div class="line">   from 开始</div><div class="line">   to 结束</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> sevenColor&#123;</div><div class="line">			<span class="selector-tag">from</span>&#123;<span class="attribute">background-color</span>:red;&#125;</div><div class="line">			50%&#123;<span class="attribute">background-color</span>:orange;&#125;</div><div class="line">			<span class="selector-tag">to</span>&#123;<span class="attribute">background-color</span>:yellow;&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/*动画名为:someProperty</span></div><div class="line">   效果跟上面的一样,只是使用关键字</div><div class="line">    添加了多个属性</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> someProperty&#123;</div><div class="line">			<span class="selector-tag">from</span>&#123;</div><div class="line">			    <span class="attribute">background-color</span>:red;</div><div class="line">			    <span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">			&#125;</div><div class="line">			50%&#123;</div><div class="line">			    <span class="attribute">background-color</span>:orange;</div><div class="line">			    <span class="attribute">transform</span>:<span class="built_in">rotate</span>(100deg);</div><div class="line">			&#125;</div><div class="line">			<span class="selector-tag">to</span>&#123;</div><div class="line">			    <span class="attribute">background-color</span>:yellow;</div><div class="line">			    <span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">			&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用动画<br>  动画的使用 需要通过<code>animation</code>这个属性,他是一个复合属性,但是再添加子属性时,除<code>时间外</code>,顺序可以打乱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">	/* 完整属性</div><div class="line">	动画名</div><div class="line">	animation-name: sevenColor;</div><div class="line">	持续时间</div><div class="line">	animation-duration: 1s;</div><div class="line">    动画播放完毕时的状态 (还原,结束值)</div><div class="line">    animation-fill-mode: forwards;</div><div class="line">    延迟时间</div><div class="line">    animation-delay: 1s;</div><div class="line">    动画次数(具体次数,或者无限次)</div><div class="line">    animation-iteration-count: infinite;</div><div class="line">    动画的播放过渡类型</div><div class="line">    animation-timing-function: ease-in;</div><div class="line">    动画状态 running 或者pause</div><div class="line">    animation-play-state: running;</div><div class="line">    动画的方向 正向 方向 正方,反向交替 方向,正向交替</div><div class="line">        比如 动画为 大-小</div><div class="line">            交替:大-小-大</div><div class="line">	animation-direction: alternate;</div><div class="line">			*/</div><div class="line">/* 复合写法</div><div class="line">    保证 第一个时间 是动画时间</div><div class="line">        第二个时间 是延迟时间</div><div class="line">        其余属性的位置可以任意写</div><div class="line">        animationName 是动画名称的意思</div><div class="line">*/</div><div class="line"></div><div class="line">    animation: animationName 1s infinite  ease-in forwards 1s;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>﻿# web字体,图标</p>
+<p>标签（空格分隔）： CSS3</p>
+<hr>
+<blockquote>
+<p>当我们发现现有的字体,图标无法满足我们时,除了可以通过美工获取,也能够通过互联网获取资源</p>
+</blockquote>
+<h2 id="常见字体格式"><a href="#常见字体格式" class="headerlink" title="常见字体格式:"></a>常见字体格式:</h2><ul>
+<li>TureTpe(.ttf)格式<ul>
+<li>.ttf字体是Windows和Mac的最常见的字体，是一种RAW格式，支持这种字体的浏览器有IE9+、Firefox3.5+、Chrome4+、Safari3+、Opera10+、iOS Mobile、Safari4.2+；<br><br></li>
+</ul>
+</li>
+<li><p>OpenType(.otf)格式</p>
+<ul>
+<li>.otf字体被认为是一种原始的字体格式，其内置在TureType的基础上，支持这种字体的浏览器有Firefox3.5+、Chrome4.0+、Safari3.1+、Opera10.0+、iOS Mobile、Safari4.2+<br> <br></li>
+</ul>
+</li>
+<li><p>Web Open Font Format(.woff)格式</p>
+<ul>
+<li>woff字体是Web字体中最佳格式，他是一个开放的TrueType/OpenType的压缩版本，同时也支持元数据包的分离，支持这种字体的浏览器有IE9+、Firefox3.5+、Chrome6+、Safari3.6+、Opera11.1+<br><br></li>
+</ul>
+</li>
+<li>Embedded Open Type(.eot)格式<ul>
+<li>.eot字体是IE专用字体，可以从TrueType创建此格式字体，支持这种字体的浏览器有IE4+<br><br></li>
+</ul>
+</li>
+<li>SVG(.svg)格式<ul>
+<li>.svg字体是基于SVG字体渲染的一种格式，支持这种字体的浏览器有Chrome4+、Safari3.1+、Opera10.0+、iOS Mobile Safari3.2+</li>
+</ul>
+</li>
+</ul>
+<h2 id="web字体"><a href="#web字体" class="headerlink" title="web字体"></a>web字体</h2><blockquote>
+<p>顾名思义 就是使用网上的字体,一般在页面上需要部分使用特殊字体时使用</p>
+</blockquote>
+<ul>
+<li>获取网址(包括,但不仅限于此):<ul>
+<li><a href="http://caniuse.com/" target="_blank" rel="external">iconfont</a></li>
+<li><a href="http://www.youziku.com/" target="_blank" rel="external">有字库</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>使用方式:<ul>
+<li>不同的网站的字体使用可能会略有不同,直接查看网站使用步骤即可</li>
+</ul>
+</li>
+</ul>
+<h1 id="web图标"><a href="#web图标" class="headerlink" title="web图标"></a>web图标</h1><blockquote>
+<p>类似于web字体,web图标是使用网络资源来实现一些简单的图标,避免使用图片进行设置</p>
+</blockquote>
+<ul>
+<li><p>获取网址(包括,但不仅限于此):</p>
+<ul>
+<li><a href="http://www.iconfont.cn/" target="_blank" rel="external">iconfont</a></li>
+<li><a href="http://app.fontastic.me/#select/3KnGTvVicfubMTBzarMK86" target="_blank" rel="external">fontastic</a><ul>
+<li>账号:haoyuexing@gmail.com</li>
+<li>密码:haoyuexing</li>
+<li>自己用就好</li>
+</ul>
+</li>
+<li><a href="http://static.zybuluo.com/antumuFish/ic02rj9syjzhy7o7u9rpgyi7/image_1an3r1rtdqs17epmj5an416r79.png" target="_blank" rel="external">免费web图标</a></li>
+</ul>
+</li>
+<li><p><strong>使用方式:</strong></p>
+<ul>
+<li>本质就是字体的替换</li>
+<li>不同的网站的字体图标使用可能会略有不同,直接查看网站使用步骤即可</li>
+</ul>
+</li>
+</ul>
+<p>  <a href="http://static.zybuluo.com/antumuFish/ic02rj9syjzhy7o7u9rpgyi7/image_1an3r1rtdqs17epmj5an416r79.png" target="_blank" rel="external">6</a>: <a href="http://www.jiawin.com/web-icon-design" target="_blank" rel="external">http://www.jiawin.com/web-icon-design</a>﻿# 兼容性查询</p>
+<p>标签（空格分隔）： CSS3</p>
+<hr>
+<blockquote>
+<p>我们可以通过帮助手册查询CSS3的兼容性问题,也能够通过网站<code>caniuse</code>进行查询</p>
+</blockquote>
+<ul>
+<li><p>地址如下:<br><a href="http://caniuse.com/" target="_blank" rel="external">caniuse</a></p>
+</li>
+<li><p>使用方式:</p>
+<ul>
+<li>输入希望查询的样式:比如<code>border-image</code></li>
+<li>属性名正确的情况下,可以找到对应的CSS样式</li>
+<li>查看<code>红色</code>不可用,<code>绿色</code>可用,<code>青色</code>的为需要注意<br><img src="http://www.youziku.com/" alt="兼容性示意图"></li>
+</ul>
+</li>
+</ul>
+<p>  <a href="http://www.youziku.com/" target="_blank" rel="external">3</a>: <a href="http://static.zybuluo.com/antumuFish/3e4xkuskpzmj7k6m6ubpkyj7/image_1an3pumf61a8ouvg1td6dv8rjg9.png" target="_blank" rel="external">http://static.zybuluo.com/antumuFish/3e4xkuskpzmj7k6m6ubpkyj7/image_1an3pumf61a8ouvg1td6dv8rjg9.png</a>﻿# HTML5第四天单词表</p>
+<p>标签（空格分隔）： 单词表</p>
+<hr>
+<ul>
+<li>round</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/raʊnd/</div><div class="line">adj. 圆形的, 球形的</div></pre></td></tr></table></figure>
+<ul>
+<li>stretch</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/stretʃ/</div><div class="line">vt. 伸展,张开</div></pre></td></tr></table></figure>
+<ul>
+<li>source</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/sɔːs/</div><div class="line">n. 来源；原始资料；水源</div></pre></td></tr></table></figure>
+<ul>
+<li>duration</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/djʊ&apos;reɪʃ(ə)n/</div><div class="line">n. 持续</div></pre></td></tr></table></figure>
+<ul>
+<li>forwards</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/&apos;fɔːwədz/</div><div class="line">adv. 向前；今后</div></pre></td></tr></table></figure>
+<ul>
+<li>delay</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> /dɪ&apos;leɪ/</div><div class="line">vi. 耽搁；延期</div></pre></td></tr></table></figure>
+<ul>
+<li>count</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/kaʊnt/</div><div class="line">vt. 计算；认为</div></pre></td></tr></table></figure>
+<ul>
+<li>infinite</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/&apos;ɪnfɪnɪt/</div><div class="line">adj. 无限的，无穷的；无数的；极大的</div></pre></td></tr></table></figure>
+<ul>
+<li>pause</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/pɔːz/</div><div class="line">n. 暂停；间歇</div></pre></td></tr></table></figure>
+<ul>
+<li>running</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/&apos;rʌnɪŋ/</div><div class="line">n. 跑步</div><div class="line">adj. 流动的</div></pre></td></tr></table></figure>
+<ul>
+<li>direction</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> /dɪ&apos;rekʃ(ə)n/</div><div class="line">n. 方向, 趋向, 趋势, 动向</div></pre></td></tr></table></figure>
+<ul>
+<li>perspective</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/pə&apos;spektɪv/</div><div class="line">n. 远景,透视</div></pre></td></tr></table></figure>
+<ul>
+<li>use</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/ju:z/</div><div class="line">n. 使用；用途；发挥</div></pre></td></tr></table></figure>
+<ul>
+<li>flex</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/fleks/</div><div class="line">vt. 折曲；使收缩</div></pre></td></tr></table></figure>
+<ul>
+<li>icon</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/&apos;aɪkɒn/</div><div class="line">n. 图标；肖像，画像；圣像；偶像</div></pre></td></tr></table></figure>
+<ul>
+<li>frame</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/freɪm/</div><div class="line">n. 框架；结构；画面</div></pre></td></tr></table></figure>
+<ul>
+<li>animation</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/ænɪ&apos;meɪʃ(ə)n/</div><div class="line">n.</div><div class="line">卡通,动画</div></pre></td></tr></table></figure>
+<ul>
+<li>fill</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/fɪl/</div><div class="line">n. 填充</div></pre></td></tr></table></figure>
+<ul>
+<li>iteration</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/ɪtə&apos;reɪʃ(ə)n/</div><div class="line">n. 反复</div></pre></td></tr></table></figure>
+<p></p>
+
+      
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/03/22/css3/">Css3</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Zorl 的个人博客">Zorl</a></p>
+        <p><span>发布时间:</span>2017年03月22日 - 16时16分</p>
+        <p><span>最后更新:</span>2017年06月09日 - 21时40分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/03/22/css3/" title="Css3">https://wuxiashuangji.github.io/2017/03/22/css3/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://wuxiashuangji.github.io/2017/03/22/css3/　　作者: Zorl" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/03/25/flexBox/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          flexBox 详解
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/25/Html5 高级API/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Html5新增高级API</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS3-0"><span class="toc-number">1.</span> <span class="toc-text">CSS3.0</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#RGBA（r，g，b，a）颜色设置"><span class="toc-number">1.1.</span> <span class="toc-text">RGBA（r，g，b，a）颜色设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#background-新属性"><span class="toc-number">1.2.</span> <span class="toc-text">background  新属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#border-image-边框背景图"><span class="toc-number">2.</span> <span class="toc-text">border-image  边框背景图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#语法："><span class="toc-number">2.1.</span> <span class="toc-text">语法：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#取值："><span class="toc-number">2.2.</span> <span class="toc-text">取值：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#说明："><span class="toc-number">2.3.</span> <span class="toc-text">说明：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#transform-2D元素空间选择变化"><span class="toc-number">3.</span> <span class="toc-text">transform 2D元素空间选择变化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#transition属性"><span class="toc-number">3.1.</span> <span class="toc-text">transition属性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#语法：-1"><span class="toc-number">3.1.1.</span> <span class="toc-text">语法：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#取值：-1"><span class="toc-number">3.1.2.</span> <span class="toc-text">取值：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#说明：-1"><span class="toc-number">3.1.3.</span> <span class="toc-text">说明：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#transform-属性"><span class="toc-number">3.2.</span> <span class="toc-text">transform 属性</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#transform-3d"><span class="toc-number"></span> <span class="toc-text">transform_3d</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#坐标轴"><span class="toc-number"></span> <span class="toc-text">坐标轴</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3d旋转"><span class="toc-number"></span> <span class="toc-text">3d旋转</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视角"><span class="toc-number"></span> <span class="toc-text">视角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视角方向-perspective-origin"><span class="toc-number"></span> <span class="toc-text">视角方向(perspective-origin)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变换样式-transform-style"><span class="toc-number"></span> <span class="toc-text">变换样式(transform-style)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过渡的优缺点"><span class="toc-number"></span> <span class="toc-text">过渡的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#语法"><span class="toc-number"></span> <span class="toc-text">语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见字体格式"><span class="toc-number"></span> <span class="toc-text">常见字体格式:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web字体"><span class="toc-number"></span> <span class="toc-text">web字体</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web图标"><span class="toc-number"></span> <span class="toc-text">web图标</span></a>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: 'null',
+        client_secret: 'null',
+      },
+    })
+    gitment.render('gitments')
+</script>
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/03/25/flexBox/" title="上一篇: flexBox 详解">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/03/25/Html5 高级API/" title="下一篇: Html5新增高级API">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/29/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/25/flexBox/">flexBox 详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/22/css3/">Css3</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/25/Html5 高级API/">Html5新增高级API</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 Zorl
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >游客到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+    <script type="text/javascript">
+      window.onload = function(){
+        document.getElementById("search").onclick = function(){
+            console.log("search")
+            search();
+        }
+      }
+      function search(){
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','A1Pz-LKMXbrzcFg2FWi6','2.0.0');
+      }
+    </script>
+
+  </div>
+</body>
+</html>
