@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://wuxiashuangji.github.io/2017/03/25/flexBox/index.html">
 <meta property="og:site_name" content="枫树下的老屋">
 <meta property="og:description" content="&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;CSS3伸缩布局&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt;     body {         margin: 0;         padding: 0;         font-family: &amp;apos;微软雅黑&amp;apos;;         background-col">
-<meta property="og:updated_time" content="2017-05-31T11:57:24.096Z">
+<meta property="og:updated_time" content="2017-06-10T02:43:34.662Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flexBox 详解">
 <meta name="twitter:description" content="&amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;CSS3伸缩布局&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt;     body {         margin: 0;         padding: 0;         font-family: &amp;apos;微软雅黑&amp;apos;;         background-col">
@@ -364,121 +364,9 @@
         background-color: pink;
     }
 &lt;/style&gt;
-
-&lt;div class=&quot;wrapper&quot;&gt;
-    &lt;header&gt;CSS3-伸缩布局介绍&lt;/header&gt;
-    &lt;!-- 传统写法 --&gt;
-    &lt;section&gt;
-        &lt;header&gt;两端对齐布局（传统）&lt;/header&gt;
-        &lt;div class=&quot;wrap-box&quot;&gt;
-            &lt;p&gt;需要精确计算宽度及外边距，会很麻烦&lt;/p&gt;
-            &lt;ul&gt;
-                &lt;li&gt;1&lt;/li&gt;
-                &lt;li&gt;2&lt;/li&gt;
-                &lt;li&gt;3&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-
-    &lt;!-- 新方法 --&gt;
-    &lt;section&gt;
-        &lt;header&gt;两端对齐布局（伸缩布局）&lt;/header&gt;
-        &lt;div class=&quot;wrap-box&quot;&gt;
-            &lt;p&gt;自动精确控制对齐，无需计算&lt;/p&gt;
-            &lt;ul&gt;
-                &lt;li&gt;1&lt;/li&gt;
-                &lt;li&gt;2&lt;/li&gt;
-                &lt;li&gt;3&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;section&gt;
-        &lt;header&gt;新概念&lt;/header&gt;
-        &lt;div class=&quot;wrap-box&quot;&gt;
-            &lt;img class=&quot;flex-img&quot; src=&quot;./images/flex.png&quot; alt=&quot;&quot;&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;CSS3伸缩布局&lt;/title&gt;
-&lt;style&gt;
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: &apos;微软雅黑&apos;;
-        background-color: #F7F7F7;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .wrapper {
-        width: 1024px;
-        margin: 0 auto;
-    }
-
-    .wrapper &gt; section {
-        min-height: 300px;
-        margin-bottom: 30px;
-        box-shadow: 1px 1px 4px #DDD;
-        background-color: #FFF;
-    }
-
-    .wrapper &gt; header {
-        text-align: center;
-        line-height: 1;
-        padding: 20px;
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
-
-    .wrapper section &gt; header {
-        line-height: 1;
-        padding: 10px;
-        font-size: 22px;
-        color: #333;
-        background-color: #EEE;
-    }
-
-    .wrapper .wrap-box {
-        padding: 20px;
-    }
-
-    .wrapper .brief {
-        min-height: auto;
-    }
-
-    .wrapper .flex-img {
-        width: 100%;
-    }
-
-    /*全局设置*/
-    section ul {
-        display: flex;
-    }
-
-    section li {
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        line-height: 200px;
-        margin: 10px;
-        background-color: pink;
-    }
-
-    /*垂直方向*/
-    section:nth-child(3) ul {
-        display: flex;
-        flex-direction: column;
-    }        
-
-&lt;/style&gt;
-
-&lt;div class=&quot;wrapper&quot;&gt;
+</code></pre><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;wrapper&quot;&gt;</div><div class="line">		&lt;header&gt;CSS3-伸缩布局介绍&lt;/header&gt;</div><div class="line">		&lt;!-- 传统写法 --&gt;</div><div class="line">		&lt;section&gt;</div><div class="line">			&lt;header&gt;两端对齐布局（传统）&lt;/header&gt;</div><div class="line">			&lt;div class=&quot;wrap-box&quot;&gt;</div><div class="line">				&lt;p&gt;需要精确计算宽度及外边距，会很麻烦&lt;/p&gt;</div><div class="line">				&lt;ul&gt;</div><div class="line">					&lt;li&gt;1&lt;/li&gt;</div><div class="line">					&lt;li&gt;2&lt;/li&gt;</div><div class="line">					&lt;li&gt;3&lt;/li&gt;</div><div class="line">				&lt;/ul&gt;</div><div class="line">			&lt;/div&gt;</div><div class="line">		&lt;/section&gt;</div><div class="line">	</div><div class="line">		&lt;!-- 新方法 --&gt;</div><div class="line">		&lt;section&gt;</div><div class="line">			&lt;header&gt;两端对齐布局（伸缩布局）&lt;/header&gt;</div><div class="line">			&lt;div class=&quot;wrap-box&quot;&gt;</div><div class="line">				&lt;p&gt;自动精确控制对齐，无需计算&lt;/p&gt;</div><div class="line">				&lt;ul&gt;</div><div class="line">					&lt;li&gt;1&lt;/li&gt;</div><div class="line">					&lt;li&gt;2&lt;/li&gt;</div><div class="line">					&lt;li&gt;3&lt;/li&gt;</div><div class="line">				&lt;/ul&gt;</div><div class="line">			&lt;/div&gt;</div><div class="line">		&lt;/section&gt;</div><div class="line">		&lt;section&gt;</div><div class="line">			&lt;header&gt;新概念&lt;/header&gt;</div><div class="line">			&lt;div class=&quot;wrap-box&quot;&gt;</div><div class="line">				&lt;img class=&quot;flex-img&quot; src=&quot;./images/flex.png&quot; alt=&quot;&quot;&gt;</div><div class="line">			&lt;/div&gt;</div><div class="line">		&lt;/section&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">	</div><div class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">	&lt;title&gt;CSS3伸缩布局&lt;/title&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		body &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">			font-family: &apos;微软雅黑&apos;;</div><div class="line">			background-color: #F7F7F7;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		ul &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">			list-style: none;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &#123;</div><div class="line">			width: 1024px;</div><div class="line">			margin: 0 auto;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &gt; section &#123;</div><div class="line">			min-height: 300px;</div><div class="line">			margin-bottom: 30px;</div><div class="line">			box-shadow: 1px 1px 4px #DDD;</div><div class="line">			background-color: #FFF;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &gt; header &#123;</div><div class="line">			text-align: center;</div><div class="line">			line-height: 1;</div><div class="line">			padding: 20px;</div><div class="line">			margin-bottom: 10px;</div><div class="line">			font-size: 30px;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper section &gt; header &#123;</div><div class="line">			line-height: 1;</div><div class="line">			padding: 10px;</div><div class="line">			font-size: 22px;</div><div class="line">			color: #333;</div><div class="line">			background-color: #EEE;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .wrap-box &#123;</div><div class="line">			padding: 20px;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .brief &#123;</div><div class="line">			min-height: auto;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .flex-img &#123;</div><div class="line">			width: 100%;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		/*全局设置*/</div><div class="line">		section ul &#123;</div><div class="line">			display: flex;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		section li &#123;</div><div class="line">			width: 200px;</div><div class="line">			height: 200px;</div><div class="line">			text-align: center;</div><div class="line">			line-height: 200px;</div><div class="line">			margin: 10px;</div><div class="line">			background-color: pink;</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		/*垂直方向*/</div><div class="line">		section:nth-child(3) ul &#123;</div><div class="line">			display: flex;</div><div class="line">			flex-direction: column;</div><div class="line">		&#125;		</div><div class="line">	</div><div class="line">	&lt;/style&gt;</div></pre></td></tr></table></figure>
+<pre><code>&lt;div class=&quot;wrapper&quot;&gt;
     &lt;header&gt;CSS3-伸缩布局详解&lt;/header&gt;
     &lt;!-- 简介 --&gt;
     &lt;section class=&quot;brief&quot;&gt;
@@ -537,103 +425,8 @@
         &lt;/div&gt;
     &lt;/section&gt;
 &lt;/div&gt;
-
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;CSS3伸缩布局&lt;/title&gt;
-&lt;style&gt;
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: &apos;微软雅黑&apos;;
-        background-color: #F7F7F7;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .wrapper {
-        width: 1024px;
-        margin: 0 auto;
-    }
-
-    .wrapper &gt; section {
-        min-height: 300px;
-        margin-bottom: 30px;
-        box-shadow: 1px 1px 4px #DDD;
-        background-color: #FFF;
-    }
-
-    .wrapper &gt; header {
-        text-align: center;
-        line-height: 1;
-        padding: 20px;
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
-
-    .wrapper section &gt; header {
-        line-height: 1;
-        padding: 10px;
-        font-size: 22px;
-        color: #333;
-        background-color: #EEE;
-    }
-
-    .wrapper .wrap-box {
-        padding: 20px;
-    }
-
-    .wrapper .brief {
-        min-height: auto;
-    }
-
-    .wrapper .flex-img {
-        width: 100%;
-    }
-
-    /*全局设置*/
-    section ul {
-        /*把所有ul指定成了伸缩盒子*/
-        display: flex;
-
-        /*这里只是一个小的测试*/
-        /*flex-direction: row-reverse;*/
-    }
-
-    section li {
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        line-height: 200px;
-        margin: 10px;
-        background-color: pink;
-    }
-
-    .flex-start ul {
-        justify-content: flex-start;
-    }
-
-    .flex-end ul {
-        justify-content: flex-end;
-    }
-
-    .center ul {
-        justify-content: center;
-    }
-
-    .space-around ul {
-        justify-content: space-around;
-    }
-
-    .space-between ul {
-        justify-content: space-between;
-    }        
-&lt;/style&gt;
-
-&lt;div class=&quot;wrapper&quot;&gt;
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div></pre></td><td class="code"><pre><div class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">	&lt;title&gt;CSS3伸缩布局&lt;/title&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		body &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">			font-family: &apos;微软雅黑&apos;;</div><div class="line">			background-color: #F7F7F7;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		ul &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">			list-style: none;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &#123;</div><div class="line">			width: 1024px;</div><div class="line">			margin: 0 auto;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &gt; section &#123;</div><div class="line">			min-height: 300px;</div><div class="line">			margin-bottom: 30px;</div><div class="line">			box-shadow: 1px 1px 4px #DDD;</div><div class="line">			background-color: #FFF;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &gt; header &#123;</div><div class="line">			text-align: center;</div><div class="line">			line-height: 1;</div><div class="line">			padding: 20px;</div><div class="line">			margin-bottom: 10px;</div><div class="line">			font-size: 30px;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper section &gt; header &#123;</div><div class="line">			line-height: 1;</div><div class="line">			padding: 10px;</div><div class="line">			font-size: 22px;</div><div class="line">			color: #333;</div><div class="line">			background-color: #EEE;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .wrap-box &#123;</div><div class="line">			padding: 20px;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .brief &#123;</div><div class="line">			min-height: auto;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .flex-img &#123;</div><div class="line">			width: 100%;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		/*全局设置*/</div><div class="line">		section ul &#123;</div><div class="line">			/*把所有ul指定成了伸缩盒子*/</div><div class="line">			display: flex;</div><div class="line">			</div><div class="line">			/*这里只是一个小的测试*/</div><div class="line">			/*flex-direction: row-reverse;*/</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		section li &#123;</div><div class="line">			width: 200px;</div><div class="line">			height: 200px;</div><div class="line">			text-align: center;</div><div class="line">			line-height: 200px;</div><div class="line">			margin: 10px;</div><div class="line">			background-color: pink;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.flex-start ul &#123;</div><div class="line">			justify-content: flex-start;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.flex-end ul &#123;</div><div class="line">			justify-content: flex-end;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.center ul &#123;</div><div class="line">			justify-content: center;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.space-around ul &#123;</div><div class="line">			justify-content: space-around;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.space-between ul &#123;</div><div class="line">			justify-content: space-between;</div><div class="line">		&#125;		</div><div class="line">	&lt;/style&gt;</div></pre></td></tr></table></figure>
+<pre><code>&lt;div class=&quot;wrapper&quot;&gt;
     &lt;header&gt;CSS3-伸缩布局详解&lt;/header&gt;
 
     &lt;!-- 简介 --&gt;
@@ -705,101 +498,8 @@
         &lt;/div&gt;
     &lt;/section&gt;
 &lt;/div&gt;
-
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;CSS3伸缩布局&lt;/title&gt;
-&lt;style&gt;
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: &apos;微软雅黑&apos;;
-        background-color: #F7F7F7;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .wrapper {
-        width: 1024px;
-        margin: 0 auto;
-    }
-
-    .wrapper &gt; section {
-        min-height: 300px;
-        margin-bottom: 30px;
-        box-shadow: 1px 1px 4px #DDD;
-        background-color: #FFF;
-    }
-
-    .wrapper &gt; header {
-        text-align: center;
-        line-height: 1;
-        padding: 20px;
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
-
-    .wrapper section &gt; header {
-        line-height: 1;
-        padding: 10px;
-        font-size: 22px;
-        color: #333;
-        background-color: #EEE;
-    }
-
-    .wrapper .wrap-box {
-        padding: 20px;
-    }
-
-    .wrapper .brief {
-        min-height: auto;
-    }
-
-    .wrapper .flex-img {
-        width: 100%;
-    }
-
-    /*全局设置*/
-    section ul {
-        display: flex;
-        min-height: 600px;
-    }
-
-    section li {
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        line-height: 200px;
-        margin: 10px;
-        background-color: pink;
-    }
-
-    .flex-start ul {
-        align-items: flex-start;
-    }
-
-    .flex-end ul {
-        align-items: flex-end;
-    }
-
-    .center ul {
-        align-items: center;
-        /*justify-content: center;*/
-    }
-
-    .stretch ul {
-        align-items: stretch;
-    }
-
-    .stretch li {
-        height: auto;
-    }
-&lt;/style&gt;
-
-&lt;div class=&quot;wrapper&quot;&gt;
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">&lt;title&gt;CSS3伸缩布局&lt;/title&gt;</div><div class="line">&lt;style&gt;</div><div class="line">	body &#123;</div><div class="line">		margin: 0;</div><div class="line">		padding: 0;</div><div class="line">		font-family: &apos;微软雅黑&apos;;</div><div class="line">		background-color: #F7F7F7;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	ul &#123;</div><div class="line">		margin: 0;</div><div class="line">		padding: 0;</div><div class="line">		list-style: none;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.wrapper &#123;</div><div class="line">		width: 1024px;</div><div class="line">		margin: 0 auto;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.wrapper &gt; section &#123;</div><div class="line">		min-height: 300px;</div><div class="line">		margin-bottom: 30px;</div><div class="line">		box-shadow: 1px 1px 4px #DDD;</div><div class="line">		background-color: #FFF;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.wrapper &gt; header &#123;</div><div class="line">		text-align: center;</div><div class="line">		line-height: 1;</div><div class="line">		padding: 20px;</div><div class="line">		margin-bottom: 10px;</div><div class="line">		font-size: 30px;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.wrapper section &gt; header &#123;</div><div class="line">		line-height: 1;</div><div class="line">		padding: 10px;</div><div class="line">		font-size: 22px;</div><div class="line">		color: #333;</div><div class="line">		background-color: #EEE;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.wrapper .wrap-box &#123;</div><div class="line">		padding: 20px;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.wrapper .brief &#123;</div><div class="line">		min-height: auto;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.wrapper .flex-img &#123;</div><div class="line">		width: 100%;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	/*全局设置*/</div><div class="line">	section ul &#123;</div><div class="line">		display: flex;</div><div class="line">		min-height: 600px;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	section li &#123;</div><div class="line">		width: 200px;</div><div class="line">		height: 200px;</div><div class="line">		text-align: center;</div><div class="line">		line-height: 200px;</div><div class="line">		margin: 10px;</div><div class="line">		background-color: pink;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.flex-start ul &#123;</div><div class="line">		align-items: flex-start;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.flex-end ul &#123;</div><div class="line">		align-items: flex-end;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.center ul &#123;</div><div class="line">		align-items: center;</div><div class="line">		/*justify-content: center;*/</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.stretch ul &#123;</div><div class="line">		align-items: stretch;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	.stretch li &#123;</div><div class="line">		height: auto;</div><div class="line">	&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<pre><code>&lt;div class=&quot;wrapper&quot;&gt;
     &lt;header&gt;CSS3-伸缩布局详解&lt;/header&gt;
 
     &lt;!-- 简介 --&gt;
@@ -1675,155 +1375,8 @@
         &lt;/div&gt;
     &lt;/section&gt;
 &lt;/div&gt;
-
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;CSS3伸缩布局&lt;/title&gt;
-&lt;style&gt;
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: &apos;微软雅黑&apos;;
-        background-color: #F7F7F7;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .wrapper {
-        width: 1024px;
-        margin: 0 auto;
-    }
-
-    .wrapper &gt; section {
-        min-height: 300px;
-        margin-bottom: 30px;
-        box-shadow: 1px 1px 4px #DDD;
-        background-color: #FFF;
-    }
-
-    .wrapper &gt; header {
-        text-align: center;
-        line-height: 1;
-        padding: 20px;
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
-
-    .wrapper section &gt; header {
-        line-height: 1;
-        padding: 10px;
-        font-size: 22px;
-        color: #333;
-        background-color: #EEE;
-    }
-
-    .wrapper .wrap-box {
-        padding: 20px;
-    }
-
-    .wrapper .brief {
-        min-height: auto;
-    }
-
-    .wrapper .flex-img {
-        width: 100%;
-    }
-
-    /*全局设置*/
-    section ul {
-        display: flex;
-    }
-
-    section:nth-child(2) ul {
-        width: 500px;
-        height: 50px;
-        display: flex;
-    }
-
-    section:nth-child(2) li {
-        flex: 1;
-        text-align: center;
-        line-height: 50px;
-        background-color: pink;
-    }
-
-    /*经典网页布局*/
-    .layout {
-        width: 400px;
-        height: 600px;
-        display: flex;
-        /*外面盒子需要垂直排列*/
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .layout .header {
-        height: 60px;
-        text-align: center;
-        line-height: 60px;
-        background-color: green;
-    }
-
-    .layout .main {
-        flex: 1;
-        display: flex;
-        text-align: center;
-        /*overflow: scroll;*/
-    }
-
-    .layout .main .aside {
-        flex: 1;
-        background-color: blue;
-    }
-
-    .layout .main .content {
-        flex: 2;
-        background-color: yellow;
-    }
-
-    .layout .footer {
-        height: 60px;
-        line-height: 60px;
-        text-align: center;
-        background-color: red;
-    }
-&lt;/style&gt;
-
-&lt;div class=&quot;wrapper&quot;&gt;
-    &lt;header&gt;CSS3-伸缩布局应用&lt;/header&gt;
-    &lt;!-- 分隔线 --&gt;
-    &lt;section&gt;
-        &lt;header&gt;自适应导航&lt;/header&gt;
-        &lt;div class=&quot;wrap-box&quot;&gt;
-            &lt;ul&gt;
-                &lt;li&gt;QQ聊天&lt;/li&gt;
-                &lt;li&gt;商品分类&lt;/li&gt;
-                &lt;li&gt;我的订单&lt;/li&gt;
-                &lt;li&gt;购物车&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-    &lt;!-- 分隔线 --&gt;
-    &lt;section&gt;
-        &lt;header&gt;经典网页布局&lt;/header&gt;
-        &lt;div class=&quot;wrap-box&quot;&gt;
-            &lt;!-- 分隔线 --&gt;
-            &lt;div class=&quot;layout&quot;&gt;
-                &lt;div class=&quot;header&quot;&gt;头部&lt;/div&gt;
-                &lt;div class=&quot;main&quot;&gt;
-                    &lt;div class=&quot;aside&quot;&gt;侧边栏&lt;/div&gt;
-                    &lt;div class=&quot;content&quot;&gt;主体内容&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;footer&quot;&gt;底部&lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/section&gt;
-&lt;/div&gt;
-
-&lt;meta charset=&quot;UTF-8&quot;&gt;
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div></pre></td><td class="code"><pre><div class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">	&lt;title&gt;CSS3伸缩布局&lt;/title&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		body &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">			font-family: &apos;微软雅黑&apos;;</div><div class="line">			background-color: #F7F7F7;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		ul &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">			list-style: none;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &#123;</div><div class="line">			width: 1024px;</div><div class="line">			margin: 0 auto;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &gt; section &#123;</div><div class="line">			min-height: 300px;</div><div class="line">			margin-bottom: 30px;</div><div class="line">			box-shadow: 1px 1px 4px #DDD;</div><div class="line">			background-color: #FFF;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper &gt; header &#123;</div><div class="line">			text-align: center;</div><div class="line">			line-height: 1;</div><div class="line">			padding: 20px;</div><div class="line">			margin-bottom: 10px;</div><div class="line">			font-size: 30px;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper section &gt; header &#123;</div><div class="line">			line-height: 1;</div><div class="line">			padding: 10px;</div><div class="line">			font-size: 22px;</div><div class="line">			color: #333;</div><div class="line">			background-color: #EEE;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .wrap-box &#123;</div><div class="line">			padding: 20px;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .brief &#123;</div><div class="line">			min-height: auto;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.wrapper .flex-img &#123;</div><div class="line">			width: 100%;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		/*全局设置*/</div><div class="line">		section ul &#123;</div><div class="line">			display: flex;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		section:nth-child(2) ul &#123;</div><div class="line">			width: 500px;</div><div class="line">			height: 50px;</div><div class="line">			display: flex;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		section:nth-child(2) li &#123;</div><div class="line">			flex: 1;</div><div class="line">			text-align: center;</div><div class="line">			line-height: 50px;</div><div class="line">			background-color: pink;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		/*经典网页布局*/</div><div class="line">		.layout &#123;</div><div class="line">			width: 400px;</div><div class="line">			height: 600px;</div><div class="line">			display: flex;</div><div class="line">			/*外面盒子需要垂直排列*/</div><div class="line">			flex-direction: column;</div><div class="line">			justify-content: space-between;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.layout .header &#123;</div><div class="line">			height: 60px;</div><div class="line">			text-align: center;</div><div class="line">			line-height: 60px;</div><div class="line">			background-color: green;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.layout .main &#123;</div><div class="line">			flex: 1;</div><div class="line">			display: flex;</div><div class="line">			text-align: center;</div><div class="line">			/*overflow: scroll;*/</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.layout .main .aside &#123;</div><div class="line">			flex: 1;</div><div class="line">			background-color: blue;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.layout .main .content &#123;</div><div class="line">			flex: 2;</div><div class="line">			background-color: yellow;</div><div class="line">		&#125;</div><div class="line">	</div><div class="line">		.layout .footer &#123;</div><div class="line">			height: 60px;</div><div class="line">			line-height: 60px;</div><div class="line">			text-align: center;</div><div class="line">			background-color: red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line">	</div><div class="line">	&lt;div class=&quot;wrapper&quot;&gt;</div><div class="line">		&lt;header&gt;CSS3-伸缩布局应用&lt;/header&gt;</div><div class="line">		&lt;!-- 分隔线 --&gt;</div><div class="line">		&lt;section&gt;</div><div class="line">			&lt;header&gt;自适应导航&lt;/header&gt;</div><div class="line">			&lt;div class=&quot;wrap-box&quot;&gt;</div><div class="line">				&lt;ul&gt;</div><div class="line">					&lt;li&gt;QQ聊天&lt;/li&gt;</div><div class="line">					&lt;li&gt;商品分类&lt;/li&gt;</div><div class="line">					&lt;li&gt;我的订单&lt;/li&gt;</div><div class="line">					&lt;li&gt;购物车&lt;/li&gt;</div><div class="line">				&lt;/ul&gt;</div><div class="line">			&lt;/div&gt;</div><div class="line">		&lt;/section&gt;</div><div class="line">		&lt;!-- 分隔线 --&gt;</div><div class="line">		&lt;section&gt;</div><div class="line">			&lt;header&gt;经典网页布局&lt;/header&gt;</div><div class="line">			&lt;div class=&quot;wrap-box&quot;&gt;</div><div class="line">				&lt;!-- 分隔线 --&gt;</div><div class="line">				&lt;div class=&quot;layout&quot;&gt;</div><div class="line">					&lt;div class=&quot;header&quot;&gt;头部&lt;/div&gt;</div><div class="line">					&lt;div class=&quot;main&quot;&gt;</div><div class="line">						&lt;div class=&quot;aside&quot;&gt;侧边栏&lt;/div&gt;</div><div class="line">						&lt;div class=&quot;content&quot;&gt;主体内容&lt;/div&gt;</div><div class="line">					&lt;/div&gt;</div><div class="line">					&lt;div class=&quot;footer&quot;&gt;底部&lt;/div&gt;</div><div class="line">				&lt;/div&gt;</div><div class="line">			&lt;/div&gt;</div><div class="line">		&lt;/section&gt;</div><div class="line">	&lt;/div&gt;</div></pre></td></tr></table></figure>
+<pre><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
 &lt;title&gt;携程旅行&lt;/title&gt;
 &lt;style&gt;
     body {
@@ -2131,7 +1684,7 @@
 
     &lt;div class=&quot;footer&quot;&gt;footer&lt;/div&gt;
 &lt;/div&gt;
-</code></pre>
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
       
       
         <div class="page-reward">
@@ -2189,7 +1742,7 @@
         <p><span>本文标题:</span><a href="/2017/03/25/flexBox/">flexBox 详解</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Zorl 的个人博客">Zorl</a></p>
         <p><span>发布时间:</span>2017年03月25日 - 08时16分</p>
-        <p><span>最后更新:</span>2017年05月31日 - 19时57分</p>
+        <p><span>最后更新:</span>2017年06月10日 - 10时43分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/25/flexBox/" title="flexBox 详解">https://wuxiashuangji.github.io/2017/03/25/flexBox/</a>
             <span class="copy-path" data-clipboard-text="原文: https://wuxiashuangji.github.io/2017/03/25/flexBox/　　作者: Zorl" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
